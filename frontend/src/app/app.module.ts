@@ -10,6 +10,7 @@ import { RegistrarseComponent } from './pages/registrarse/registrarse.component'
 import { HomeComponent } from './pages/home/home.component';
 import { HeadernewsComponent } from './components/headernews/headernews.component';
 import { BasePageComponent } from './components/base-page/base-page.component';
+import { CardNoticiaComponent } from './card-noticia/card-noticia.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BasePageComponent } from './components/base-page/base-page.component';
     RegistrarseComponent,
     HomeComponent,
     HeadernewsComponent,
-    BasePageComponent
+    BasePageComponent,
+    CardNoticiaComponent
   ],
   imports: [
     BrowserModule,
