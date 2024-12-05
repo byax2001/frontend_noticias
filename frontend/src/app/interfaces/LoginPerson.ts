@@ -1,5 +1,5 @@
 
 export interface LoginPerson {
-  username: string;
-  password: string;
+  usuario: string;
+  contrasena: string;
 }
