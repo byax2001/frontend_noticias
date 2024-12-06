@@ -21,7 +21,7 @@ export class NoticiaComponent implements OnInit {
     imagenUrl:'',
     descripcion:' Las zonas tropicales',
     cuerpo:'lrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec pur lorem ipsum lorem impsun ',
-    fechaPublicacion:'24/555',
+    fechaPublicacion: new Date(),
     fuente:'http://google.com',
     categoria:{
       id:0,
@@ -37,6 +37,9 @@ export class NoticiaComponent implements OnInit {
     if (id) {
       this.notisrv.getNoticia(id).subscribe((data:any) => {
         this.noticia = data;
+        if (typeof this.noticia.fechaPublicacion === 'string') {
+          this.noticia.fechaPublicacion = new Date(this.noticia.fechaPublicacion);
+        }
       });
     }})
   }
