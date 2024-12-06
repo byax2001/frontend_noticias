@@ -1,0 +1,15 @@
+<div class="vr"></div>
+<div class="container mt-2 mb-2">
+  <div class="row mb-2">
+    <div class="col">
+      <h1 class="text-center">Noticias Recomendadas</h1>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col" *ngFor="let noticia of noticias">
+      <app-card-noticia [noticia]="noticia"></app-card-noticia>
+    </div>
+  </div>
+</div>
+
+

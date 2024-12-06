@@ -1,10 +1,13 @@
 <app-base-page></app-base-page>
 
-<div class="container mt-5" *ngIf="noticia">
-  <div class="card">
-    <div class="d-flex justify-content-center">
+<div class="container mt-5 shadow-lg rounded" *ngIf="noticia">
+  <div class="d-flex justify-content-end">
+    <a routerLink="/home" class="btn btn-primary  top-0 end-0 m-3 btnEffect" >Home</a>
+  </div>
+  <div class="card ">
+    <div class="d-flex justify-content-center" style="background-color: #191919;">
       <img [src]="noticia.imagenUrl"
-           class="card-img-top"
+           class="card-img-top rounded mt-4 mb-4"
            alt="{{ noticia.titulo }}"
            style="max-width: 500px; max-height: 300px; object-fit: cover;" />
     </div>
@@ -20,4 +23,4 @@
   </div>
 </div>
 
-
+<app-noticias-recomendadas [idCategoria]="this.noticia.categoria.id"></app-noticias-recomendadas>
