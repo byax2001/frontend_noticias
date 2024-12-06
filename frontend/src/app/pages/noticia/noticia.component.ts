@@ -30,12 +30,15 @@ export class NoticiaComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    //El suscribe se ejecuta cuando detecta el cambio de la ruta en el caso que se dese utilizar el mismo componente pero
+    // un parametro de la ruta cambie
+    this.route.paramMap.subscribe(params => {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     if (id) {
       this.notisrv.getNoticia(id).subscribe((data:any) => {
         this.noticia = data;
       });
-    }
+    }})
   }
 
 

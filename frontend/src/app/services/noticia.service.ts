@@ -13,5 +13,10 @@ export class NoticiaService{
   getNoticia(id:number){
     return this.http.get(this.url+'/'+id);
   }
+  //Noticia por categoria
+  getNoticiaCategoria(id:number){
+    return this.http.get(this.url+'/categoria/'+id);
+  }
+
 
 }
