@@ -10,8 +10,9 @@ import { RegistrarseComponent } from './pages/registrarse/registrarse.component'
 import { HomeComponent } from './pages/home/home.component';
 import { HeadernewsComponent } from './components/headernews/headernews.component';
 import { BasePageComponent } from './components/base-page/base-page.component';
-import { CardNoticiaComponent } from './card-noticia/card-noticia.component';
+import { CardNoticiaComponent } from './components/card-noticia/card-noticia.component';
 import { NoticiaComponent } from './pages/noticia/noticia.component';
+import { NoticiasRecomendadasComponent } from './components/noticias-recomendadas/noticias-recomendadas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NoticiaComponent } from './pages/noticia/noticia.component';
     HeadernewsComponent,
     BasePageComponent,
     CardNoticiaComponent,
-    NoticiaComponent
+    NoticiaComponent,
+    NoticiasRecomendadasComponent
   ],
   imports: [
     BrowserModule,
