@@ -20,8 +20,11 @@
           Seleccionar
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+            <a class="dropdown-item" (click)="selectCategory('')">Todas las categorías</a>
+          </li>
           <li *ngFor="let categoria of categorias">
-            <a class="dropdown-item" href="#">{{ categoria.categoria }}</a>
+            <a class="dropdown-item" (click)="selectCategory(categoria.nombre)">{{ categoria.nombre }}</a>
           </li>
         </ul>
       </div>
