@@ -1,1 +1,13 @@
-<p>base-page works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- Logo que va al home -->
+    <a class="navbar-brand" (click)="goHome()">
+      <img src="news.png" alt="logo" width="50" height="50" class="d-inline-block align-middle" />
+      NoticiasGT
+    </a>
+
+
+    <!-- Botón de cerrar sesión -->
+    <button class="btn btn-danger ms-3" (click)="logout()">Cerrar Sesión</button>
+  </div>
+</nav>

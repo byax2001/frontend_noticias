@@ -9,5 +9,9 @@ export class NoticiaService{
   getNoticias(){
     return this.http.get(this.url);
   }
+  //Noticia por id
+  getNoticia(id:number){
+    return this.http.get(this.url+'/'+id);
+  }
 
 }

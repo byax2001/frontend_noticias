@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeadernewsComponent } from './components/headernews/headernews.component';
 import { BasePageComponent } from './components/base-page/base-page.component';
 import { CardNoticiaComponent } from './card-noticia/card-noticia.component';
+import { NoticiaComponent } from './pages/noticia/noticia.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardNoticiaComponent } from './card-noticia/card-noticia.component';
     HomeComponent,
     HeadernewsComponent,
     BasePageComponent,
-    CardNoticiaComponent
+    CardNoticiaComponent,
+    NoticiaComponent
   ],
   imports: [
     BrowserModule,

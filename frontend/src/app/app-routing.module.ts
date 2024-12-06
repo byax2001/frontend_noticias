@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistrarseComponent } from './pages/registrarse/registrarse.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NoticiaComponent } from './pages/noticia/noticia.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'home',
     component:HomeComponent,
+  },
+  {
+    path:"notigt/:id",
+    component:NoticiaComponent
   },
   {
     path:'**',  // Cualquier otra ruta que no este definida redirige a home
