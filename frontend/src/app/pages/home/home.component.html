@@ -1,0 +1,13 @@
+<app-headernews (categoryChanged)="onCategoryChange($event)"></app-headernews>
+<div class="container">
+  <h2 class="text-center mb-4 mt-2">Noticias Actuales de Guatemala</h2>
+  <!-- g para separacion vertical entre cartas,  -->
+  <!-- row-cols-1 para que se muestre una carta por fila en dispositivos pequeños,  -->
+  <!-- row-cols-md-3 para que se muestren tres cartas por fila en dispositivos medianos,  -->
+  <div class="row row-cols-1 row-cols-md-4 g-2">
+    <div class="col" *ngFor="let noticia of filteredNoticias">
+      <app-card-noticia [noticia]="noticia"></app-card-noticia>
+    </div>
+  </div>
+</div>
+
