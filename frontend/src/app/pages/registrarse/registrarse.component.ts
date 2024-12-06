@@ -29,7 +29,7 @@ export class RegistrarseComponent {
     this.loginsrv.postRegister(this.userRegist).subscribe(
       (res: any) => {
         // Verificamos el estado de la respuesta
-        if (res.status) {
+        if (res.token!== "error") {
           Swal.fire('Usuario Registrado', res.mensaje, 'success'); // Mostrar mensaje de éxito
           this.router.navigate(['']); // Redirigir a la página de login o inicio
         } else {

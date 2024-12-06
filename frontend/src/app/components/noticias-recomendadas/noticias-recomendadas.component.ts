@@ -24,7 +24,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -37,7 +37,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -50,7 +50,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -63,7 +63,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -76,7 +76,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -91,7 +91,7 @@ export class NoticiasRecomendadasComponent implements OnChanges {
   // Se ejecuta cuando cambia el valor de la propiedad idCategoria
   ngOnChanges(changes: any): void {
     if (changes['idCategoria'] && changes['idCategoria'].currentValue !== changes['idCategoria'].previousValue) {
-      console.log('idCategoria cambiado a:', this.idCategoria);
+      //console.log('idCategoria cambiado a:', this.idCategoria);
       this.getNoticiasCategoria(this.idCategoria);
     }
   }

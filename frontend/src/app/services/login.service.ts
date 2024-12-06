@@ -7,7 +7,7 @@ import { LoginPerson } from '../interfaces/LoginPerson';
 
 @Injectable({providedIn: 'root'})
 export class LoginService {
-  url = 'http://localhost:8080/usuarios';
+  url = 'http://localhost:8080/auth';
   constructor(private http: HttpClient) { }
 
   postLogin(loginPerson: LoginPerson) {
@@ -15,7 +15,7 @@ export class LoginService {
   }
 
   postRegister(userRegist: UserRegist) {
-    return this.http.post(`${this.url}`, userRegist);
+    return this.http.post(`${this.url}/registro`, userRegist);
   }
 
 

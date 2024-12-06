@@ -6,7 +6,7 @@ export interface NoticiasInterface{
   imagenUrl:        string;
   descripcion:      string;
   cuerpo:           string;
-  fechaPublicacion: string;
+  fechaPublicacion: Date;
   fuente:           string;
   categoria:        CategoriaInterface;
 }

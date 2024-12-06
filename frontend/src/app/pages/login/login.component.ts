@@ -27,14 +27,12 @@ export class LoginComponent {
     // Encriptar la contraseña usando md5
     this.loginPerson.contrasena = md5(this.loginPerson.contrasena);
 
-
     this.loginsrv.postLogin(this.loginPerson).subscribe(
       (res: any) => {
         // Verificamos si el nombre del usuario es "no encontrado"
-        if (res.nombre !== "no encontrado") {
+        if (res.token !== "error") {
           // Si el nombre no es "no encontrado", el login fue exitoso
-          localStorage.setItem('iduser', res.id);
-          localStorage.setItem('nombre', res.nombre);
+          localStorage.setItem('token', res.token);
           this.router.navigate(['/home']); // Redirigir al home
           Swal.fire('Bienvenido', 'Inicio de sesión exitoso', 'success');
         } else {

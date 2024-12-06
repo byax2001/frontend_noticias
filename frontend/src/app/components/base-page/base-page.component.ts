@@ -19,13 +19,12 @@ export class BasePageComponent {
 
   // Función para cerrar sesión
   logout(): void {
-    localStorage.removeItem('iduser');
-    localStorage.removeItem('usuario');
+    localStorage.removeItem('token');
     this.router.navigate(['/login']); // Redirigir al login
   }
 
   protectRoute(): void {
-    if (localStorage.getItem('iduser') == null) {
+    if (localStorage.getItem('token') == null) {
       this.router.navigate(['/login']);
     }
   }

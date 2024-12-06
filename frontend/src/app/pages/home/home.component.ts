@@ -23,7 +23,7 @@ export class HomeComponent {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -36,7 +36,7 @@ export class HomeComponent {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -49,7 +49,7 @@ export class HomeComponent {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -62,7 +62,7 @@ export class HomeComponent {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion": new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,
@@ -75,7 +75,7 @@ export class HomeComponent {
       "imagenUrl": "https://cdn-icons-png.flaticon.com/512/10278/10278187.png",
       "descripcion": "Descripción de la noticia 1",
       "cuerpo": "Cuerpo de la noticia 1",
-      "fechaPublicacion": "2024-12-05T10:00:00",
+      "fechaPublicacion":new Date(),
       "fuente": "Fuente 1",
       "categoria": {
         "id": 1,

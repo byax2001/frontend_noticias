@@ -46,8 +46,7 @@ export class HeadernewsComponent {
 
   // Función para cerrar sesión
   logout(): void {
-    localStorage.removeItem('iduser');
-    localStorage.removeItem('usuario');
+    localStorage.removeItem('token');
     this.router.navigate(['/login']); // Redirigir al login
   }
 
@@ -57,7 +56,7 @@ export class HeadernewsComponent {
   }
   //Funcion para proteger la ruta de la pagina de inicio
   protectRoute(): void {
-    if (localStorage.getItem('iduser') == null) {
+    if (localStorage.getItem('token') == null) {
       this.router.navigate(['/login']);
     }
   }
